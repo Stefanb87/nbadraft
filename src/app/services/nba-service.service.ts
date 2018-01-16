@@ -7,6 +7,6 @@ export class NbaService {
   constructor(private http: Http) { }
 
   getPlayers() {
-    return this.http.get('https://stats.nba.com/stats/drafthistory?LeagueID=00');
+    return this.http.get('https://jsonplaceholder.typicode.com/posts/1');
   }
 }
