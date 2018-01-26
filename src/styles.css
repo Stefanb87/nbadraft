@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+/***** GLOBAL STYLES *****/
+
+* {
+    font-family: 'Roboto', sans-serif;
+
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}

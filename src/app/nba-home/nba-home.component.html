@@ -1,3 +1,14 @@
-<p>
-  nba-home works!
-</p>
+<table>
+  <tr>
+    <th>{{ header[1] }}</th>
+    <th>{{ header[4] }}</th>
+    <th>{{ header[8] }} ({{ header[7] }})</th>
+    <th>{{ header[10] }}</th>
+  </tr>
+  <tr *ngFor="let player of players">
+    <td><a [routerLink]="['/profile', player[0]]">{{ player[1] }}</a></td>
+    <td #i>{{ player[4] }}</td>
+    <td>{{ player[8] }} ({{ player[7] }})</td>
+    <td>{{ player[10] }}</td>
+  </tr>
+</table>

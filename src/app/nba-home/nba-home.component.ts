@@ -8,11 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NbaHomeComponent implements OnInit {
 
-  constructor(private nbaService: NbaService) { }
+  players: any[] = [];
+  header: any[] = [];
+
+  constructor(private nbaService: NbaService) {
+  }
 
   ngOnInit() {
-   this.nbaService.getPlayers().subscribe(players => {
-     console.log(players.json());
+   this.nbaService.getPlayers().subscribe(data => {
+     this.players = data.resultSets[0].rowSet.slice(0, 20);
+     this.header = data.resultSets[0].headers;
    });
   }
 
