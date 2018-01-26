@@ -10,6 +10,10 @@
             box-sizing: border-box;
 }
 
+body {
+    padding: 0px 300px;
+}
+
 table {
     border-collapse: collapse;
     width: 100%;
@@ -19,4 +23,17 @@ td, th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
+}
+
+
+@media screen and (max-width: 1150px) {
+    body {
+        padding: 0px 100px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    body {
+        padding: 0px 20px;
+    }
 }

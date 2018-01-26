@@ -1,3 +1,28 @@
+th {
+    text-align: center;
+    height: 50px;
+    color: blue;
+}
+
+td {
+    text-align: center;
+}
+
 tr:nth-child(even) {
     background-color: #dddddd;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+@media screen and (max-width: 600px) {
+    th {
+        font-size: 12px;
+    }
+    
+    td {
+        font-size: 11px;
+    }
 }

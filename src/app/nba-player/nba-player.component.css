@@ -1,0 +1,29 @@
+th {
+    color: blue;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    background-color: lightblue;
+    color: blue;
+    font-weight: bold;
+    border: 2px solid blue;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    th {
+        font-size: 12px;
+    }
+    
+    td {
+        font-size: 11px;
+    }
+
+    button {
+        width: 70px;
+        height: 25px;
+        font-size: 11px;
+    }
+}

@@ -16,9 +16,9 @@ export class NbaHomeComponent implements OnInit {
 
   ngOnInit() {
    this.nbaService.getPlayers().subscribe(data => {
-     this.players = data.resultSets[0].rowSet.slice(0, 20);
-     this.header = data.resultSets[0].headers;
-   });
+                                  this.players = data.resultSets[0].rowSet.slice(0, 20);
+                                  this.header = data.resultSets[0].headers;
+                                });
   }
 
 }
